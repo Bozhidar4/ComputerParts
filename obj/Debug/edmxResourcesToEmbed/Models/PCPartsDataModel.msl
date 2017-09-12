@@ -1,0 +1,142 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="PCPartsDataModelStoreContainer" CdmEntityContainer="PCPartsEntities1">
+    <EntitySetMapping Name="Cases">
+      <EntityTypeMapping TypeName="PCPartsDataModel.Case">
+        <MappingFragment StoreEntitySet="Case">
+          <ScalarProperty Name="CaseId" ColumnName="CaseId" />
+          <ScalarProperty Name="Image" ColumnName="Image" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Information" ColumnName="Information" />
+          <ScalarProperty Name="Price" ColumnName="Price" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="CPUs">
+      <EntityTypeMapping TypeName="PCPartsDataModel.CPU">
+        <MappingFragment StoreEntitySet="CPU">
+          <ScalarProperty Name="CPUId" ColumnName="CPUId" />
+          <ScalarProperty Name="Image" ColumnName="Image" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Information" ColumnName="Information" />
+          <ScalarProperty Name="Price" ColumnName="Price" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="GPUs">
+      <EntityTypeMapping TypeName="PCPartsDataModel.GPU">
+        <MappingFragment StoreEntitySet="GPU">
+          <ScalarProperty Name="GPUId" ColumnName="GPUId" />
+          <ScalarProperty Name="Image" ColumnName="Image" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Information" ColumnName="Information" />
+          <ScalarProperty Name="Price" ColumnName="Price" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="HDDs">
+      <EntityTypeMapping TypeName="PCPartsDataModel.HDD">
+        <MappingFragment StoreEntitySet="HDD">
+          <ScalarProperty Name="HDDId" ColumnName="HDDId" />
+          <ScalarProperty Name="Image" ColumnName="Image" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Information" ColumnName="Information" />
+          <ScalarProperty Name="Price" ColumnName="Price" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Monitors">
+      <EntityTypeMapping TypeName="PCPartsDataModel.Monitor">
+        <MappingFragment StoreEntitySet="Monitor">
+          <ScalarProperty Name="MonitorId" ColumnName="MonitorId" />
+          <ScalarProperty Name="Image" ColumnName="Image" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Information" ColumnName="Information" />
+          <ScalarProperty Name="Price" ColumnName="Price" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Motherboards">
+      <EntityTypeMapping TypeName="PCPartsDataModel.Motherboard">
+        <MappingFragment StoreEntitySet="Motherboard">
+          <ScalarProperty Name="MotherboardId" ColumnName="MotherboardId" />
+          <ScalarProperty Name="Image" ColumnName="Image" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Information" ColumnName="Information" />
+          <ScalarProperty Name="Price" ColumnName="Price" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="OpticalDrives">
+      <EntityTypeMapping TypeName="PCPartsDataModel.OpticalDrive">
+        <MappingFragment StoreEntitySet="OpticalDrive">
+          <ScalarProperty Name="OpticalDriveId" ColumnName="OpticalDriveId" />
+          <ScalarProperty Name="Image" ColumnName="Image" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Information" ColumnName="Information" />
+          <ScalarProperty Name="Price" ColumnName="Price" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Parts">
+      <EntityTypeMapping TypeName="PCPartsDataModel.Part">
+        <MappingFragment StoreEntitySet="Part">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="CaseId" ColumnName="CaseId" />
+          <ScalarProperty Name="MotherboardId" ColumnName="MotherboardId" />
+          <ScalarProperty Name="CPUId" ColumnName="CPUId" />
+          <ScalarProperty Name="RAMId" ColumnName="RAMId" />
+          <ScalarProperty Name="SSDId" ColumnName="SSDId" />
+          <ScalarProperty Name="HDDId" ColumnName="HDDId" />
+          <ScalarProperty Name="GPUId" ColumnName="GPUId" />
+          <ScalarProperty Name="OpticalDriveId" ColumnName="OpticalDriveId" />
+          <ScalarProperty Name="MonitorId" ColumnName="MonitorId" />
+          <ScalarProperty Name="PeripheralId" ColumnName="PeripheralId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Peripherals">
+      <EntityTypeMapping TypeName="PCPartsDataModel.Peripheral">
+        <MappingFragment StoreEntitySet="Peripheral">
+          <ScalarProperty Name="PeripheralId" ColumnName="PeripheralId" />
+          <ScalarProperty Name="Image" ColumnName="Image" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Information" ColumnName="Information" />
+          <ScalarProperty Name="Price" ColumnName="Price" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="RAMs">
+      <EntityTypeMapping TypeName="PCPartsDataModel.RAM">
+        <MappingFragment StoreEntitySet="RAM">
+          <ScalarProperty Name="RAMId" ColumnName="RAMId" />
+          <ScalarProperty Name="Image" ColumnName="Image" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Information" ColumnName="Information" />
+          <ScalarProperty Name="Price" ColumnName="Price" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="SSDs">
+      <EntityTypeMapping TypeName="PCPartsDataModel.SSD">
+        <MappingFragment StoreEntitySet="SSD">
+          <ScalarProperty Name="SSDId" ColumnName="SSDId" />
+          <ScalarProperty Name="Image" ColumnName="Image" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Information" ColumnName="Information" />
+          <ScalarProperty Name="Price" ColumnName="Price" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="CartItems">
+      <EntityTypeMapping TypeName="PCPartsDataModel.CartItem">
+        <MappingFragment StoreEntitySet="CartItem">
+          <ScalarProperty Name="ItemPrice" ColumnName="ItemPrice" />
+          <ScalarProperty Name="ItemName" ColumnName="ItemName" />
+          <ScalarProperty Name="ItemId" ColumnName="ItemId" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

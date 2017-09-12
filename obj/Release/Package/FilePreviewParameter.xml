@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parameters>
+  <parameter name="IIS Web Application Name" description="" value="computerparts" tags="IisApp">
+    <parameterEntry kind="ProviderPath" scope="IisApp" match="^F:\\Just\ IT\\Projects\\ComputerParts\\ComputerParts\\obj\\Release\\Package\\PackageTmp$" />
+    <parameterEntry kind="ProviderPath" scope="setAcl" match="^F:\\Just\ IT\\Projects\\ComputerParts\\ComputerParts\\obj\\Release\\Package\\PackageTmp$" />
+  </parameter>
+  <parameter name="PCPartsEntities-Web.config Connection String" description="" value="metadata=res://*/Models.PCPartsDataModel.csdl|res://*/Models.PCPartsDataModel.ssdl|res://*/Models.PCPartsDataModel.msl;provider=System.Data.SqlClient;provider connection string=&quot;data source=pcparts.database.windows.net;initial catalog=PCparts;user id=Bozhidar;password=MnogoMnogo004;application name=EntityFramework;MultipleActiveResultSets=True;App=EntityFramework&quot;" tags="">
+    <parameterEntry kind="XmlFile" scope="F:\\Just\ IT\\Projects\\ComputerParts\\ComputerParts\\obj\\Release\\Package\\PackageTmp\\Web\.config$" match="/configuration/connectionStrings/add[@name='PCPartsEntities']/@connectionString" />
+  </parameter>
+  <parameter name="PCPartsEntities1-Web.config Connection String" description="" value="metadata=res://*/Models.PCPartsDataModel.csdl|res://*/Models.PCPartsDataModel.ssdl|res://*/Models.PCPartsDataModel.msl;provider=System.Data.SqlClient;provider connection string=&quot;Data Source=pcparts.database.windows.net;Initial Catalog=PCparts;User ID=Bozhidar;Password=MnogoMnogo004;Application Name=EntityFramework&quot;" tags="">
+    <parameterEntry kind="XmlFile" scope="F:\\Just\ IT\\Projects\\ComputerParts\\ComputerParts\\obj\\Release\\Package\\PackageTmp\\Web\.config$" match="/configuration/connectionStrings/add[@name='PCPartsEntities1']/@connectionString" />
+  </parameter>
+</parameters>

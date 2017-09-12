@@ -1,0 +1,69 @@
+﻿@model IEnumerable<ComputerParts.Models.OpticalDrive>
+
+@{
+    ViewBag.Title = "Optical Drives";
+}
+
+<h2>Optical Drives</h2>
+
+
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.Image)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Name)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Information)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Price)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @if (item.Image == null)
+            {
+                item.Image = "https://www.scan.co.uk/images/products/2555744-a.jpg";
+            }
+            <img src="@Url.Content(item.Image)" height="100" />
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Name)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Information)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Price)
+        </td>
+        <td>
+            @Html.ActionLink("Details", "Details", new { id = item.OpticalDriveId }) |
+            @Html.ActionLink("Edit", "Edit", new { id=item.OpticalDriveId }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.OpticalDriveId })
+        </td>
+    </tr>
+}
+
+</table>
+<div class="button-holder">
+    <p class="button btn btn-info">
+        @Html.ActionLink("Create New", "Create")
+    </p>
+    <a class="button btn btn-primary" href="Cases">Start Over</a>
+    <a class="button btn btn-primary" href="SSDs">Go Back</a>
+    <a class="button btn btn-primary" href="Monitors">Next Step</a>
+</div>
+<div class="container">
+    <h2>Step 8</h2>
+    <div class="progress">
+        <div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width:80%">
+            80%
+        </div>
+    </div>
+</div>

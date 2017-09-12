@@ -1,0 +1,142 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="PCPartsDataModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="CartItem">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="ItemId" Type="int" />
+    <Property Name="ItemName" Type="varchar" MaxLength="50" />
+    <Property Name="ItemPrice" Type="money" />
+  </EntityType>
+  <EntityType Name="Case">
+    <Key>
+      <PropertyRef Name="CaseId" />
+    </Key>
+    <Property Name="CaseId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Image" Type="varchar(max)" />
+    <Property Name="Name" Type="varchar" MaxLength="50" />
+    <Property Name="Information" Type="varchar(max)" />
+    <Property Name="Price" Type="money" />
+  </EntityType>
+  <EntityType Name="CPU">
+    <Key>
+      <PropertyRef Name="CPUId" />
+    </Key>
+    <Property Name="CPUId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Image" Type="varchar(max)" />
+    <Property Name="Name" Type="varchar" MaxLength="50" />
+    <Property Name="Information" Type="varchar(max)" />
+    <Property Name="Price" Type="money" />
+  </EntityType>
+  <EntityType Name="GPU">
+    <Key>
+      <PropertyRef Name="GPUId" />
+    </Key>
+    <Property Name="GPUId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Image" Type="varchar(max)" />
+    <Property Name="Name" Type="varchar" MaxLength="50" />
+    <Property Name="Information" Type="varchar(max)" />
+    <Property Name="Price" Type="money" />
+  </EntityType>
+  <EntityType Name="HDD">
+    <Key>
+      <PropertyRef Name="HDDId" />
+    </Key>
+    <Property Name="HDDId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Image" Type="varchar(max)" />
+    <Property Name="Name" Type="varchar" MaxLength="50" />
+    <Property Name="Information" Type="varchar(max)" />
+    <Property Name="Price" Type="money" />
+  </EntityType>
+  <EntityType Name="Monitor">
+    <Key>
+      <PropertyRef Name="MonitorId" />
+    </Key>
+    <Property Name="MonitorId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Image" Type="varchar(max)" />
+    <Property Name="Name" Type="varchar" MaxLength="50" />
+    <Property Name="Information" Type="varchar(max)" />
+    <Property Name="Price" Type="money" />
+  </EntityType>
+  <EntityType Name="Motherboard">
+    <Key>
+      <PropertyRef Name="MotherboardId" />
+    </Key>
+    <Property Name="MotherboardId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Image" Type="varchar(max)" />
+    <Property Name="Name" Type="varchar" MaxLength="50" />
+    <Property Name="Information" Type="varchar(max)" />
+    <Property Name="Price" Type="money" />
+  </EntityType>
+  <EntityType Name="OpticalDrive">
+    <Key>
+      <PropertyRef Name="OpticalDriveId" />
+    </Key>
+    <Property Name="OpticalDriveId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Image" Type="varchar(max)" />
+    <Property Name="Name" Type="varchar" MaxLength="50" />
+    <Property Name="Information" Type="varchar(max)" />
+    <Property Name="Price" Type="money" />
+  </EntityType>
+  <EntityType Name="Part">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="CaseId" Type="int" />
+    <Property Name="MotherboardId" Type="int" />
+    <Property Name="CPUId" Type="int" />
+    <Property Name="RAMId" Type="int" />
+    <Property Name="SSDId" Type="int" />
+    <Property Name="HDDId" Type="int" />
+    <Property Name="GPUId" Type="int" />
+    <Property Name="OpticalDriveId" Type="int" />
+    <Property Name="MonitorId" Type="int" />
+    <Property Name="PeripheralId" Type="int" />
+  </EntityType>
+  <EntityType Name="Peripheral">
+    <Key>
+      <PropertyRef Name="PeripheralId" />
+    </Key>
+    <Property Name="PeripheralId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Image" Type="varchar(max)" />
+    <Property Name="Name" Type="varchar" MaxLength="50" />
+    <Property Name="Information" Type="varchar(max)" />
+    <Property Name="Price" Type="money" />
+  </EntityType>
+  <EntityType Name="RAM">
+    <Key>
+      <PropertyRef Name="RAMId" />
+    </Key>
+    <Property Name="RAMId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Image" Type="varchar(max)" />
+    <Property Name="Name" Type="varchar" MaxLength="50" />
+    <Property Name="Information" Type="varchar(max)" />
+    <Property Name="Price" Type="money" />
+  </EntityType>
+  <EntityType Name="SSD">
+    <Key>
+      <PropertyRef Name="SSDId" />
+    </Key>
+    <Property Name="SSDId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Image" Type="varchar(max)" />
+    <Property Name="Name" Type="varchar" MaxLength="50" />
+    <Property Name="Information" Type="varchar(max)" />
+    <Property Name="Price" Type="money" />
+  </EntityType>
+  <EntityContainer Name="PCPartsDataModelStoreContainer">
+    <EntitySet Name="CartItem" EntityType="Self.CartItem" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Case" EntityType="Self.Case" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="CPU" EntityType="Self.CPU" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="GPU" EntityType="Self.GPU" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="HDD" EntityType="Self.HDD" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Monitor" EntityType="Self.Monitor" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Motherboard" EntityType="Self.Motherboard" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="OpticalDrive" EntityType="Self.OpticalDrive" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Part" EntityType="Self.Part" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Peripheral" EntityType="Self.Peripheral" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="RAM" EntityType="Self.RAM" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="SSD" EntityType="Self.SSD" Schema="dbo" store:Type="Tables" />
+  </EntityContainer>
+</Schema>

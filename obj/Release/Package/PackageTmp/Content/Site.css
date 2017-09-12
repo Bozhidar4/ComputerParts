@@ -1,0 +1,310 @@
+﻿body {
+    /*padding-top: 50px;
+    padding-bottom: 20px;*/
+    /*padding-left: 15px;
+    padding-right: 15px;*/
+}
+
+/* Set padding to keep content from hitting the edges */
+.body-content {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+/* Override the default bootstrap behavior where horizontal description lists 
+   will truncate terms that are too long to fit in the left column 
+*/
+.dl-horizontal dt {
+    white-space: normal;
+}
+
+/* Set width on the form input elements since they're 100% wide by default */
+input,
+select,
+textarea {
+    max-width: 280px;
+}
+
+.slider{
+    width: 100%;
+}
+
+.container{
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+
+.items> .container{
+    /*display: block;
+    position: relative;
+    top: 25%;
+    left: 15%;*/
+    /*width: 50%;*/
+    /*padding-right: 15px;
+    padding-left: 15px;*/
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.banner-info{
+    background-color: #ed645c;
+    opacity: 0.8;
+    padding-top: 30px;
+    border-bottom-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+.offer-grid1 .offer-grid2{
+    display: block;
+    position: relative;
+    top: 25%;
+    left: 25%;
+    width: 50%;
+}
+
+.slide{
+    background-color: black;
+}
+.row{
+    /*margin-left: 165px;
+    margin-right: 165px;*/
+}
+
+.col-md-3>p{
+    padding-top: 15px;
+}
+
+.header-bottom{
+    box-shadow: 5px 5px 20px lightgrey;
+}
+
+.row{
+    padding-top: 20px;
+}
+
+.table{
+    /*position: absolute;*/
+    /*display: block;*/
+    /*top: 25%;*/
+    /*left: 15%;*/
+    width: auto;
+    /*padding-right: 15px;
+    padding-left: 55px;*/
+    margin-left: auto;
+    margin-right: auto;
+}
+
+h2{
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.button-holder{
+    /*display: block;
+    position:absolute;
+    left: 15%;*/
+    /*margin-left: 35%;*/
+    /*margin-right: auto;*/
+    text-align: center;
+}
+
+/*Logos Slider*/
+#scroller{
+  width: 10000%;
+}
+#scroller.ready > *{
+  display: inline-block;
+  float:left;
+  overflow: hidden;
+
+  webkit-animation-timing-function: linear;
+  animation-timing-function: linear;
+
+
+  -webkit-animation-timing-function: linear;
+  animation-timing-function: linear;
+
+  -webkit-animation-delay: 1s;
+  animation-delay: 1s;
+
+
+  -webkit-animation-duration: 30s;
+  animation-duration: 30s;
+
+
+  -webkit-animation-name: marginator;
+  animation-name: marginator;
+
+
+
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+}
+#scroller:hover > *{
+
+
+  -webkit-animation-play-state: paused;
+  animation-play-state: paused;
+}
+
+@-webkit-keyframes marginator {
+  0% {
+    -webkit-transform: translate(0,0);
+    -webkit-transform: translate3d(0,0,0);
+  }
+  100% {
+    -webkit-transform: translate(-100%,0);
+    -webkit-transform: translate3d(-100%,0,0);
+  }
+}
+
+@keyframes marginator {
+  0% {
+
+    -webkit-transform: translate(0,0);
+    transform: translate(0,0);
+
+    -webkit-transform: translate3d(0,0,0);
+    transform: translate3d(0,0,0);
+  }
+  100% {
+
+
+    -webkit-transform: translate(-100%,0);
+    transform: translate(-100%,0);
+
+
+    -webkit-transform: translate3d(-100%,0,0);
+    transform: translate3d(-100%,0,0);
+  }
+}
+#scroller-wrapper{
+  overflow: hidden;
+  /*background-color: aliceblue;*/
+}
+
+.logos{
+    width: 200px;
+    padding-left: 30px;
+}
+/*End Logos Slider*/
+
+footer{
+    background-color: #0096cc;
+    height: 50px;
+    color: white;
+    text-align: center;
+    padding-top: 15px;
+}
+
+/*Start Image hover*/
+
+.holder {
+  -webkit-transition: all 0.5s ease;
+     -moz-transition: all 0.5s ease;
+       -o-transition: all 0.5s ease;
+      -ms-transition: all 0.5s ease;
+          transition: all 0.5s ease;
+}
+ 
+.holder:hover {
+  -webkit-transform: rotate(-5deg);
+     -moz-transform: rotate(-5deg);
+       -o-transform: rotate(-5deg);
+      -ms-transform: rotate(-5deg);
+          transform: rotate(-5deg);
+}
+/*End Image hover*/
+
+.container2 {
+  position: relative;
+  width: 100%;
+}
+.image {
+  display: block;
+  /*width: 100%;*/
+  height: auto;
+}
+
+.overlay {
+  position: absolute;
+  bottom: 100%;
+  left: 0;
+  right: 0;
+  background-color: #00a0dc;
+  overflow: hidden;
+  width: 100%;
+  height:0;
+  transition: .5s ease;
+}
+
+.container2:hover .overlay {
+  bottom: 0;
+  height: 100%;
+}
+
+.text {
+  white-space: nowrap; 
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  overflow: hidden;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+}
+
+h1{
+    text-align: center;
+    font-family:'Adobe Gothic Std';
+    color: #0096cc;
+}
+
+.table{
+    /*background-color: #f2f2f2;*/
+    box-shadow: 5px 5px 20px lightgrey;
+}
+
+.vertical-menu{
+    margin-top: 243px;
+}
+
+.slide-image{
+    /*width: 90%;*/
+}
+
+@media(max-width: 320px) {
+    .logo h1 a {
+        padding: 0;
+    }
+}
+@media(max-width: 384px) {
+    .logo h1 a {
+        padding: 0;
+    }
+}
+@media(max-width: 414px) {
+    .logo h1 a {
+        padding: 0;
+    }
+}
+@media(max-width: 480px) {
+    .logo h1 a {
+        padding: 0;
+    }
+}
+
+.clearfix{
+    background-color: #111;
+}
+
+.memenu > li > a{
+    border-right: none;
+}
+
+a:focus, a:hover {
+    text-decoration: none;
+}
